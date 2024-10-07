@@ -1,4 +1,3 @@
-package com.jts.hms;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,7 +9,7 @@ public class DatabaseService {
 	private static Connection createConn() throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 
-		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/training", "root", "password");
+		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital", "root", "dharshana");
 
 		System.out.println("Database connection created successfully.");
 

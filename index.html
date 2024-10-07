@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hospital Management System</h1>
+        <form id="appointmentForm">
+            <h2>Book Appointment</h2>
+            <label for="patientId">Patient ID:</label>
+            <input type="number" id="patientId" name="patientId" required>
+
+            <label for="doctorId">Doctor ID:</label>
+            <input type="number" id="doctorId" name="doctorId" required>
+
+            <label for="appointmentDate">Appointment Date (yyyy-mm-dd):</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+
+        <h2>Manage Patients and Doctors</h2>
+        <div class="manage-section">
+            <h3>Add Patient</h3>
+            <form id="addPatientForm">
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName" name="patientName" required>
+
+                <label for="patientAge">Patient Age:</label>
+                <input type="number" id="patientAge" name="patientAge" required>
+
+                <label for="patientGender">Patient Gender:</label>
+                <input type="text" id="patientGender" name="patientGender" required>
+
+                <button type="submit">Add Patient</button>
+            </form>
+
+            <h3>Add Doctor</h3>
+            <form id="addDoctorForm">
+                <label for="doctorName">Doctor Name:</label>
+                <input type="text" id="doctorName" name="doctorName" required>
+
+                <label for="doctorDepartment">Doctor Department:</label>
+                <input type="text" id="doctorDepartment" name="doctorDepartment" required>
+
+                <button type="submit">Add Doctor</button>
+            </form>
+        </div>
+
+        <div class="view-section">
+            <button id="viewPatientsBtn">View Patients</button>
+            <button id="viewDoctorsBtn">View Doctors</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
