@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Management System</title>
-
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,6 +21,7 @@
             <input type="date" id="appointmentDate" name="appointmentDate" required>
 
             <button type="submit">Book Appointment</button>
+            <div id="appointmentSuccess" class="success-message"></div>
         </form>
 
         <h2>Manage Patients and Doctors</h2>
@@ -38,6 +38,7 @@
                 <input type="text" id="patientGender" name="patientGender" required>
 
                 <button type="submit">Add Patient</button>
+                <div id="patientSuccess" class="success-message"></div>
             </form>
 
             <h3>Add Doctor</h3>
@@ -49,17 +50,10 @@
                 <input type="text" id="doctorDepartment" name="doctorDepartment" required>
 
                 <button type="submit">Add Doctor</button>
+                <div id="doctorSuccess" class="success-message"></div>
             </form>
         </div>
-
-        <div class="view-section">
-            <button id="viewPatientsBtn">View Patients</button>
-            <button id="viewDoctorsBtn">View Doctors</button>
-        </div>
-
-        <div id="result"></div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
